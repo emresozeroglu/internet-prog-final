@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h4>Üye Giriş Ekranı</h4>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label>E-Posta</label>
+            <input type="text" class="form-control" #mail>
+          </div>
+          <div class="form-group">
+            <label>Parola</label>
+            <input type="password" class="form-control" #parola>
+          </div>
+        </div>
+        <div class="card-footer ">
+          <button class="btn btn-outline-primary col-md-8"  (click)="OturumAc(mail.value,parola.value)" >Giriş</button>
+          <img (click)="signInWithGmail()" class="col-md-4" src="https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
